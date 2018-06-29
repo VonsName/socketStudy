@@ -1,0 +1,12 @@
+{
+  "name": "socketStudy",
+  "version": "0.0.1",
+  "dependencies": {
+    "ejs": "^2.6.1"
+  },
+  "devDependencies": {
+    "express": "^4.16.3",
+    "express-static": "^1.2.5",
+    "socket.io": "^2.1.1"
+  }
+}

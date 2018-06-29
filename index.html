@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>测试是是  是</p>
+    <input type="button" id="bt1" value="发送消息给服务端">
+    <input type="text" id="con" width="500px">
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script>
+        let socket=io();
+        document.getElementById('bt1').onclick=function(){
+            socket.emit('question',document.getElementById('con').value);
+        };
+
+        socket.on('answer',function (msg) {
+            alert(msg);
+        })
+    </script>
+</body>
+</html>
